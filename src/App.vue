@@ -1,15 +1,15 @@
 <template>
   <h1>APP</h1>
-  <SiteBookmark href="https://www.deepl.com/translator#en/ru/Site%20Bookmark" text="tt" />
+  <BookmarkGrid columns="3" />
 </template>
 
 <script>
-import SiteBookmark from './components/SiteBookmark.vue';
+import BookmarkGrid from './components/BookmarkGrid.vue';
 
 export default {
   name: 'App',
   components: {
-    SiteBookmark,
+    BookmarkGrid,
   }
 }
 </script>
