@@ -3,7 +3,9 @@
     class="bookmark-grid"
     :style="{ gridTemplateColumns: `repeat(${columns}, 1fr)` }"
   >
-    <SiteBookmark href="/" text="sdf" />
+    <SearchWidget></SearchWidget>
+    <SearchWidget></SearchWidget>
+    <SiteBookmark href="/123" text="sdf" />
     <SiteBookmark href="/" text="sdf" />
     <SiteBookmark href="/" text="sdf" />
     <SiteBookmark href="/" text="sdf" />
@@ -16,11 +18,13 @@
 </template>
 <script>
 import SiteBookmark from "./SiteBookmark.vue";
+import SearchWidget from "./SearchWidget.vue";
 
 export default {
   name: "BookmarkGrid",
   components: {
     SiteBookmark,
+    SearchWidget
   },
   props: {
     columns: {
@@ -36,5 +40,7 @@ export default {
 .bookmark-grid {
   display: grid;
   width: 780px;
+  height: 780px;
+  grid-gap: 15px;
 }
 </style>
